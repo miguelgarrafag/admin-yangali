@@ -1,0 +1,55 @@
+<div class="container max-width">
+    <div class="row login_background">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="col-md-12 container-login-design shadow mb-5 bg-body">
+                <div class="row d-flex justify-content-center size-logo-login">
+                    <div class="col-md-12 container-logo-login shadow p-3 mb-5 bg-body d-flex justify-content-center">
+                        <img src="https://previews.dropbox.com/p/thumb/ACcCd_yOUrlfOpTEyrShFzarMQrX7_sE-_ynenG7SBPdVQEZFpR2pDWELvOL7BsrKqW0tMIHwHIgA_foqoiOV_o3tQ9XJfqpJdgsjLkbHBNACbucVDDt7R-nMKoB6PO5rj6Q18k_AZN9h69IMgVa36qA5MNCsIBScvnd0RD7PdIsuM5bfuZAmrz_XhjYGltsYBbRmOs2qopy4KPqJJFxiZROe3zOXyu-r6Jq6GqTj1x50lIzKo3-N3pBcX3wbRQqTfYoxeoAP5bE39U9rDigz7x9sll-oSbvPjXFd2VMv-z9z7zOo6bhO7_R7VZXMSnfr44/p.png" alt="">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <h3 class="mt-4 black-text mb-2">Panel Administrativo</h3>
+                    <h6 class="text-secondary px-3">Gestiona toda tu información accediendo de manera correcta</h6>
+                </div>
+                <form class="mt-2">
+                    <!-- Input Email -->
+                    <div class="mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="email" [(ngModel)]="email" name="email" required>
+                      </div>
+                    </div>
+                
+                    <!-- Input Contraseña -->
+                    <div class="mb-3">
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input [type]="passwordFieldType" class="form-control" id="password" placeholder="contraseña" [(ngModel)]="password" name="password" required>
+                        <button type="button" class="btn btn-outline-secondary btn-toggle-pass" (click)="togglePasswordVisibility()">
+                          <i class="fas" [ngClass]="passwordFieldType === 'password' ? 'fa-eye' : 'fa-eye-slash'"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <button type="submit" (click)="login()" class="btn btn-grey">Iniciar sesión</button>
+
+                  </form>
+                <!-- <div class="col-md-12">
+                    <input id="email" type="text" [(ngModel)]="email" placeholder="Correo Electrónico" />
+                </div>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput placeholder="Contraseña" id="password" type="password" [(ngModel)]="password">
+                  </mat-form-field>
+                <div class="col-md-12" >
+                    <button (click)="login()">Iniciar Sesión</button>
+                </div> -->
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+
+</div>

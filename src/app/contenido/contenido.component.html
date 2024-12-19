@@ -1,0 +1,99 @@
+<div class="container">
+    <h2>Sección de Contenido</h2>
+    <div class="row">
+        <div class="col-md-12 border-contenido row">
+            <div class="col-md-6 row px-0 m-0">
+                <h3 >Ventana Emergente</h3>
+                <div class="row">
+                    <label>
+                        <input type="checkbox" [(ngModel)]="newModal.status" [disabled]="isDisabledModal"/>
+                        Mostrar Ventana Emergente
+                      </label>
+                    <label for="bannerTitle">Título</label>
+                    <input id="bannerTitle" type="text" [(ngModel)]="newModal.titulo" class="form-control" name="titulo banner" (focus)="onFocusModal()"
+                    (blur)="onBlurModal()" [disabled]="isDisabledModal">
+                    <label for="bannerDescription" class="mt-2">Descripción</label>
+                    <textarea id="bannerDescription" type="text" [(ngModel)]="newModal.descripcion" class="form-control" name="descripción banner"
+                    (focus)="onFocusModal()" (blur)="onBlurModal()" [disabled]="isDisabledModal"></textarea>
+                </div>
+                <button *ngIf="!isDisabledModal" class="btn btn-primary mt-3 col-md-4" (click)="updateModal(newModal)">Grabar</button>
+                <button *ngIf="isDisabledModal" class="btn btn-success mt-3 col-md-4" (click)="editarModal()">Editar</button>
+                <button *ngIf="!isDisabledModal" class="btn btn-danger mt-3 col-md-4 ml-5" (click)="cancelarModal()">Cancelar</button>
+              </div>
+              <div class="col-md-6 row px-0 m-0">
+                <div *ngIf="isFocusedModal"  class="floating-div shadow mb-5 bg-body">
+                    <h3>¡Todo sobre la sección Modales!</h3> <br>
+                
+                    Cambiaras el título de la primera sección
+                    de la página web
+
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-12 border-contenido row">
+            <div class="col-md-6 row px-0 m-0">
+                <h3 >Banner</h3>
+                <div class="row">
+                    <label for="bannerTitle">Título</label>
+                    <input id="bannerTitle" type="text" [(ngModel)]="newUser.titulo" class="form-control" name="titulo banner" (focus)="onFocusBanner()"
+                    (blur)="onBlurBanner()" [disabled]="isDisabledBanner">
+                    <label for="bannerDescription" class="mt-2">Descripción</label>
+                    <textarea id="bannerDescription" type="text" [(ngModel)]="newUser.descripcion" class="form-control" name="descripción banner"
+                    (focus)="onFocusBanner()" (blur)="onBlurBanner()" [disabled]="isDisabledBanner"></textarea>
+                </div>
+                <button *ngIf="!isDisabledBanner" class="btn btn-primary mt-3 col-md-4" (click)="updateBanner(newUser)">Grabar</button>
+                <button *ngIf="isDisabledBanner" class="btn btn-success mt-3 col-md-4" (click)="editarBanner()">Editar</button>
+                <button *ngIf="!isDisabledBanner" class="btn btn-danger mt-3 col-md-4 ml-5" (click)="cancelarBanner()">Cancelar</button>
+              
+              </div>
+              <div class="col-md-6 row px-0 m-0">
+                <div *ngIf="isFocusedBanner"  class="floating-div shadow mb-5 bg-body">
+                    <h3>¡Todo sobre la sección de Banner!</h3> <br>
+                
+                    Cambiaras el título de la primera sección
+                    de la página web
+
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-12 border-contenido row">
+            <!-- Nosotros -->
+            <div class="col-md-6 row px-0 m-0">
+                <h3 class="mt-3">Nosotros</h3>
+                <div *ngFor="let item of nosotros" class="row">
+                <label class="mt-2">Título</label>
+                <input  type="text" [(ngModel)]="item.title" class="form-control" placeholder="título nosotros" (focus)="onFocusNosotros()"
+                (blur)="onBlurBannerNosotros()">
+                <label class="mt-2">Descripción</label>
+                <textarea  type="text" [(ngModel)]="item.description" class="form-control" placeholder="descripción nosotros" (focus)="onFocusNosotros()"
+                (blur)="onBlurBannerNosotros()"></textarea>
+                </div>
+                <button class="btn btn-primary mt-3 col-md-4">Grabar</button>
+
+            </div>
+            <div class="col-md-6 row px-0 m-0">
+                <div *ngIf="isFocusedNosotros"  class="floating-div shadow mb-5 bg-body">
+                    <h3>¡Todo sobre la sección Nosotros!</h3> <br>
+                
+                    Cambiaras el título de la segunda sección
+                    de la página web, para cada item.
+
+                  </div>
+              </div>
+        </div>
+        
+        <div class="col-md-12 border-contenido">
+            <!-- Servicios -->
+            <div class="col-md-6 row px-0 m-0">
+                <h3>Servicios</h3>
+                <div *ngFor="let service of servicios" class="row">
+                <input [(ngModel)]="service.title" placeholder="Título">
+                <textarea [(ngModel)]="service.description" placeholder="Descripción"></textarea>
+                </div>
+            </div>
+            <button>Grabar</button>
+
+        </div>
+    </div>
+  </div>
+  

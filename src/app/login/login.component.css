@@ -1,0 +1,89 @@
+
+  /* button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+  } */
+input{
+  background-color: #eff2f6;
+}
+.max-width{
+  max-width: 100%;
+}
+.login_background{
+    height: 100vh;             /* Ocupa toda la altura de la ventana */
+    background-size: cover;    /* La imagen cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: white;              /* Color del texto, para que contraste */
+    display: flex;
+    justify-content: center;   /* Centra el contenido horizontalmente */
+    align-items: center;       /* Centra el contenido verticalmente */
+    text-align: center; 
+    background: #dcedf4;
+  }
+mat-form-field {
+  border-radius: 4px;        /* Opcional: agregar bordes redondeados */
+  padding: 8px;              /* Opcional: ajustar el espacio interno */
+}
+.mat-mdc-text-field-wrapper{
+  background-color: white !important;
+  height: 50px;
+}
+mat-form-field {
+  border-radius: 4px;         /* Opcional: bordes redondeados */
+  padding: 8px;               /* Opcional: ajustar el espacio interno */
+}
+
+/* Si usas appearance="fill", asegura que el fondo de la caja de entrada se aplique correctamente */
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #ffffff !important;  /* Color blanco de fondo para la caja interna */
+}
+.container-login-design{
+  border: 1px solid #b2d9eb; height: auto; padding: 35px;
+  background: linear-gradient(to bottom, #c1effb 10%, #ffffff); /* Cambia de rojo a azul */
+  border-radius: 20px;
+}
+.container-logo-login{
+  border: 1px solid #b2d9eb; height: auto; padding: 5px;
+  background-color: #eef5f6;
+  border-radius: 15px;
+  width: 70px;
+  height: 70px;
+}
+.size-logo-login{
+  height: 70px;
+}
+.black-text{
+  color: black;
+}
+.form-control{
+  border: 1px solid #eff2f6;
+}
+.input-group-text{
+  border: 1px solid #eff2f6;
+}
+.input-group{
+  height: 45px;
+}
+.btn-toggle-pass{
+  padding: 10px;
+  background-color: #eff2f6;
+  color: black;
+  border: 1px #eff2f6 solid;
+}
+input:focus {
+  outline: none;  /* Elimina el borde de enfoque */
+  box-shadow: none; /* Elimina la sombra que aparece al hacer focus (opcional) */
+  background-color: #eff2f6;
+}
+span{
+  background-color: #eff2f6;
+}
+.btn-grey{
+  width: 100%;
+  background-color: #22222c;
+  color: white;
+}
+
+
+

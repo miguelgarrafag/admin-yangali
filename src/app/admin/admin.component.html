@@ -1,0 +1,13 @@
+<div class="menu-container">
+    <ul class="menu-list">
+      <li (click)="showSection('contenido')">Contenido</li>
+      <li (click)="showSection('contacto')">Contacto</li>
+      <li (click)="showSection('usuarios')">Usuarios</li>
+    </ul>
+  </div>
+  <div class="content">
+    <app-contenido *ngIf="selectedSection === 'contenido'"></app-contenido>
+    <app-contacto *ngIf="selectedSection === 'contacto'"></app-contacto>
+    <app-usuarios *ngIf="selectedSection === 'usuarios'"></app-usuarios>
+  </div>
+  <button (click)="logout()">Cerrar Sesión</button>

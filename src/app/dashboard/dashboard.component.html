@@ -1,0 +1,185 @@
+
+<div class="modal" *ngIf="mostrarModal">
+    <div class="modal-content">
+      <span class="close" (click)="cerrarModal()">&times;</span>
+      <h3>{{this.modal.titulo}}</h3>
+      <p>{{this.modal.descripcion}}</p>
+      <iframe width="100%" height="420px" 
+          src="https://www.youtube.com/embed/ZlKNdiGR1LI" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+    </div>
+  </div>
+<section class="banner">
+    <img src="https://previews.dropbox.com/p/thumb/ACdM-wJLYwj3O3TAbOB81GaNN_3YBtl2P5RwhuWEyAvIISaDla8CNcjGOn862HEOGnpKqZGuFLzb3jM1EkZjO8k1J7XpUP3h0V9I_T6pRTvi3FXqr6wpBeoJBNIyn5ElwyqBu5boukoKW8vtiYpTu--LOhXySugODCwYFkrQd_nZS-M3YF3kigw7UvEdl0OiALUoY778G2caTqzDzZubOX4cyh6v8PZmHzJQpd7z4C_pVLJN0vKAErhSm9ssngR8P5T-ODKxI9tpwWAv0fM5kavl8ek_dqtgFEf1atrX773RSYJ_rfJR9U-FLr3VwVrYZ5s/p.png" alt="" style="margin-left: 140px;">
+    <div class="banner-content">
+        <h1>{{this.banner.titulo}}</h1>
+        <p>{{this.banner.descripcion}}</p>
+        <button>Evalúa tu Caso</button>
+    </div>
+</section>
+<section id="nosotros" class="content-section">
+    <hr style="width:30px;margin: 30px auto 5px;">
+    <br>
+    <h4>¿Por qué Elegirnos?</h4>
+    <h2>¿Por qué debería confiar en Nosotros?</h2>
+    <div class="container-nosotros">
+        <div class="square-nosotros">
+            <div class="image-nosotros">
+                <img src="https://previews.dropbox.com/p/thumb/ACejw7Vm34xP4TP-Ckc73B5ljepsqZ2eWe43Uo8A6oHoCp01Mc9l6GkdPMvu2TKfkTMf8qnwAtb0fmJtX4QiRumD7PblP63vJM0JSQ4g3nIHMIuI-TsNGQut-HWPCI8tFWpZ0I7W3eIRPmCF31mL-BdmVBe-qmnaAMTOMH2K8eF8BN0Ad7ZdrOXBqFkEWOIdolKIswxMMVncWPdsC2vGs8xV-9T21WNdewBsRW06Wxdokmd20EJT-DCZz0dZYD_EEPknhZtcuwULkCNA5SrW_Xp1VcVREXIphDhNi5OcEiq6cbzOZXFe0mRDicMrBfUhT_Y/p.jpeg" alt="Experiencia Comprobada">
+            </div>
+            <div class="content-nosotros">
+                <h3>Experiencia Comprobada</h3>
+                <p>Nuestros clientes y los años dan fe de los resultados exitosos que siempre obtenemos.</p>
+            </div>
+            <div class="icon-nosotros">
+                <img src="https://previews.dropbox.com/p/thumb/ACfl2Myv0w1ottKigXxAHfYAl_KW9Jd3CxJXfbqt2pAsdoG7gz2HtdHjZo7eJ1f7g-nDf74RlIlKRIV4sklFnLcJ4R8KVUF9zA4IOWkFvuUx6Wywa_q2L5iGYZkN39l_IiZ2m9e_vZOkkdI1hHgUuvF4M6E_QC-jD6FNFTcSMHrBt27R28JGYTuHoz9R5KACxciXvAyNmTHkwLyq9vP14v_oWM03suGMQPlXSgCR-vrXFQiCu2FUWqhoSDqicTNvtlzaIXcHtMEZFpdm9iw-4Ruze_sWkPnaCdAMuAKQep05NWVtTycbTYcCPphAGevZG-w/p.png" alt=""
+                height="30">
+            </div>
+        </div>
+        <div class="square-nosotros">
+            <div class="image-nosotros">
+                <img src="https://previews.dropbox.com/p/thumb/ACem8SrfQlJocw4u94L4FhmPT3fjr53bRNmX0wdKjotvpnUWbt6OT2_DcgGCwQ0brjtWn4gZpDFG-jcr5KUJv8NbtQoWru02OLmvHfhYVvUoNhcjdnjl1ApVJ4Am5muwnXCU8UzE0aN1nH4pkfA29B-tyDya9AlooSmuvBR0d9Mz2KbRv5s4NtIYqYAfZT9K-g7iAkotNY6qKykHh9dWg8_CXctQ-0mGqxn7VnVI0iB6x3Pe8jcFtw_vFpdrJeh94FvpuO4ABOAaRo_CumR5FI0PAO55cF5OVZ_d1W3gpZNyAZCvNVUAU3AALZxVoeDDbK8/p.jpeg" alt="Equipo Dedicado">
+            </div>
+            <div class="content-nosotros">
+                <h3>Equipo Dedicado</h3>
+                <p>Nos especializamos en Derecho Laboral, siendo expertos en este campo.</p>
+            </div>
+            <div class="icon-nosotros">
+                <img src="https://previews.dropbox.com/p/thumb/ACdvnAODsJO0yBp5UZyzhYD2Cwxl5nb3sYzEatq_a4Mny6szEh1J-B4NRvVsUEOvuwxjQTuy83LEbum_QQhyDrwdZwdGOFxNcc2gTkNHA6yAL-dBbY8J30zn1aoHnbJzEAvTBHslu3K-ujWWHsqS_-XEpBcOoHxAg0NvYTszGiMb6rNkdnwztZvaAZ94tb_K4s7nPSgg3NVbbgUQeg-6gX1-g60fdG2osv6WEgMnnhW1n1RwiFYz-QwF8r4ZudeS0agTXjGDtZ2fnqVxITCJj4zZdz1n1yE504GziWoLSZ_K7urt7nVaS_IrO5lYowXOKJ4/p.png" alt=""
+                height="30">            
+            </div>
+        </div>
+        <div class="square-nosotros">
+            <div class="image-nosotros">
+                <img src="https://previews.dropbox.com/p/thumb/ACcSWTrnsro4l1aIEMdPl8LG8tJMeqY1vt-J_dsItn7a8wmp8gP0_B_N4_l-QRAI1pQxUOcHs4aPLsUw-_SE1iKNEvZcAD-oZAhcHCOs8ZB71gFiLHj0EnjwY0SDETFZKYsqlCNzkcI0iuKXTfO-JF9m0k7ouwAXJRvoHWCeSvMzQjSOlf9A00msUQLSdba-scJZBgi51cl77udIW6hmxK-feD_vzHQ_sHajJLI9DZAYeLvUdfO8whXtWRgCCaqVI17t_G55ubMHqlgUeSFAa5sMYVnplevZQmFojYtv95x0nc20cuMiY_6uYfIHswYKQGE/p.jpeg" alt="Atención Personalizada">
+            </div>
+            <div class="content-nosotros">
+                <h3>Atención Personalizada</h3>
+                <p>Nosotros entendemos y empatizamos con nuestros clientes, por eso el compromiso hacía uds.</p>
+            </div>
+            <div class="icon-nosotros">
+                <img src="https://previews.dropbox.com/p/thumb/ACchabE5otjDecl_oDVQJ6M-jLk3BdfSa8IcUyKBDkj4WWXNWGmjZurAkY0Kx46hBhigqsrBj-Zw9L8sqFh_RG_UMBnr9Kod6gjNh35qk0nhk87Kq5Zb7BxzNBP1nx2o9J4VEnUxrard2_lF5g94HXVdNhqB028_VbuvTZTp6vb3GpJ9QcUNLwplDwSCATnOCGk0qMiGXpd0BWRzPWMNfjGnc53LpJ3D2d9-ecp_0_cphxJ0NGzAUGdENJHOsu9Eb-kyvaKY2sdJLgREXuRrRI99Ke-LTSd23yuV66BjqvR84lSjrs-pjyYKxuj30HOSqS8/p.png" alt=""
+                height="30">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="servicios" class="content-section-grey">
+    <hr style="width:30px;margin: 30px auto 5px;">
+    <br>
+    <h4>Nuestras Especialidades</h4>
+    <h2>Te asesoramos en los siguientes temas, pues nuestra experiencia está comprobada</h2>        
+    <div class="container-servicio">
+        <div class="square-servicio" style="background: #b44211;">
+            <div class="content-servicio" >
+                <p>Somos especialistas en Derecho Laboral.</p>
+            </div>
+        </div>
+        
+        <div class="square-servicio" style="background: #4f8706;">
+            <div class="content-servicio" >
+                <p>Somos especialistas en conseguir tu PENSIÓN.</p>
+            </div>
+        </div>
+        <div class="square-servicio" style="background: #03526c;">
+            <div class="content-servicio">
+                <p>Denunciamos accidentes de trabajo.</p>
+            </div>
+        </div>
+        <div class="square-servicio" style="background: #660473;">
+            <div class="content-servicio">
+                <p>Especialistas en capacitación en materia laboral</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-servicio">
+        <div class="square-servicio" style="background: #660473;">
+            <div class="content-servicio" >
+                <p>Denunciar ante sunafil los derechos que se vienen incumpliendo.</p>
+            </div>
+        </div>
+        <div class="square-servicio" style="background: #03526c;">
+            <div class="content-servicio">
+                <p>Somos especialistas en derechos laborales administrativos para el sector público.</p>
+            </div>
+        </div>
+        <div class="square-servicio" style="background: #4f8706;">
+            <div class="content-servicio">
+                <p>Somos especialistas en llevar sus Derechos Laborales.</p>
+            </div>
+        </div>
+        <div class="square-servicio" style="background: #b44211;">
+            <div class="content-servicio" >
+                <p>Somos especialistas en tramitar convenios y laudos arbitrales.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="equipo" class="content-section">
+    <hr style="width:30px;margin: 30px auto 5px;">
+    <br>
+    <h4>Equipo de Trabajo</h4>
+    <h2>Por qué convertimos en HECHOS tus DERECHOS</h2>        
+    <div class="container-equipo">
+        <div class="square-equipo" style="background: #dcedf4;">
+            <div class="image-equipo">
+                <img src="https://previews.dropbox.com/p/thumb/ACfdJ5mGC0J1oF7iGfwJMepo8dfrWmdMcGlZmhBZh2J0gYHVThRA4HQbWNVusoByFbzFUguG9qY1H2KVxTs03WVMqwQsHmT2j6FPv0nn1w-0zBKEY6svrLyudL0tB8Se52NUgb0hYPQa5_bVP7f-ysmhm8uLHAyT-loPIYMWbkSGKK-XRvxR3p0g6ePpaZbNcqFAg47PeEJg0CVoJS-BZLU5AT04Bn5UizIh-9d5UvOWaVslPSF9Cw3zDuzXTh4aDsQPa2wf10cp_PykLkMHQ54NnrYDpLoYsWxe7gpZ4WXV3JITw1VMGcffVdUZKrqdTF4/p.jpeg" alt="Experiencia Comprobada">
+            </div>
+            <div class="content-equipo" >
+                <h3>Marco Aurelio Paz</h3>
+                <p>Especialista en Administración.</p>
+            </div>
+        </div>
+        <div class="square-equipo" style="background: #f2e6dc;">
+            <div class="image-equipo">
+                <img src="https://previews.dropbox.com/p/thumb/ACcsdOM9iI9ptz9O4kIJHbdHdks92Nn4uSpgZ9huP51-TB_lvvD6SGlvXIR6qHqnbG6Yxy_CcP4xami9pe-2CEFAOciqtLLC_NZb6XTSbynz_oRdoaT0pTc91maK6I9lHKHS1Wt8jFNAeRV67rA4s5HjSDxgp1PonjVB2s3QkpJueCvKnIunFxjU5QuNtex9Ql5ME3VgHgXyGSK3RcEJ9aAVdQ0vVIZDjeR9nTQGNheJSevb1cORP372n5mKKJxh4u_wEX1SWLVSgsYjm0ReJ1Db2ui0VovFTQRy_Y_MIbbUDdhPqQfcykDGoEIanp6ZV6s/p.jpeg" alt="Equipo Dedicado">
+            </div>
+            <div class="content-equipo" >
+                <h3>Juan Guizado Armas</h3>
+                <p>Dr. en Derecho Laboral</p>
+            </div>
+        </div>
+        <div class="square-equipo" style="background: #e4f3dc;">
+            <div class="image-equipo">
+                <img src="https://previews.dropbox.com/p/thumb/ACeQ5M6YbUGUEPh3PSE8iErGUYBHB9OwvdgPjecTd4J1x5evmlCPEBVkh_0YJCnXETpMogF_T5NeYslPJy52e3L19IWZD2B6nTCmHzWa7qx19i2j9GhEfnKH3Ds1pKtL3jvOZW_9fLssA1oQ9Aq7GWEtcoGlkOSzxU30o076p8SiE8QiPVO3OMDHdVSo-JDKcuY8ZJ1o2CkM_wwGd9Hw2QAC6EC32nD9dghUIyg29eLHAarVD7K65qoEa9ISXmyXvzlclC4O26ehszTW782idZO_kV6CL_1xu6xVjc7xl6Vsu1NTdRMsGjT-YIXNiW3S-38/p.jpeg" alt="Atención Personalizada">
+            </div>
+            <div class="content-equipo" >
+                <h3>Miguel Angel Patiño</h3>
+                <p>Ing. de Software</p>
+            </div>
+        </div>
+        <div class="square-equipo" style="background: #dceaf3;">
+            <div class="image-equipo">
+                <img src="https://previews.dropbox.com/p/thumb/ACfJu9W8mcEV_xKMmNbYliI9ZbGF8dpFwOrKkOSoCHfMMnTTAhhpY5ZugdaaDEV4gvQc7IVWGobAKLSBo26Lde3sJeTbN6X-XMIKP4Cj4q_OOdbWbyoHqxcv_qXxT_wxBH1C6Df2d7WD_j73EtzcJbn67KL3AM2lgylXGyvCT4270iwAX6kaGXakQmaHaXmfRXwG0B4TWuT62kySQLPnQgW_BlRvrBBc4sDU3f4sSey1rAhMqpOsKV-QWOrbNZqCI8R04f6zQX7_BaKgXl6BOhR0SI6eoJOycx1nakabkxwJOQDnhnLMEmk2nI4Qz65UCmg/p.jpeg" alt="Atención Personalizada">
+            </div>
+            <div class="content-equipo">
+                <h3>Lucía Mendez Marín</h3>
+                <p>Dra. en Derecho Laboral</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="content-contact">
+    <img src="https://previews.dropbox.com/p/thumb/ACfN6zXa7VAwlCbllZ5JdiOH8hITsBPCFKF-QKaU8hL0iNP9Oql_mHOKDYHuDQCAQivRQMb3N4U-aIiqWlo-QgyWMafOKODJUlpgFf45TP8HGAVvpog9CPL2EPcuxhx5ZHscLEa6YesEHRFnNJZWTQVH6XR3uJkLtAnK9Rc7p5ZzGkORnf5vdCefa-Mdzk8LhD8kKpxtMAsmUZpZKxvvVYIQ_giA6RAwyTtppgl6RSuj5cFlo7SH5-oW3u68Q648uVHtS4SHMu83AjM2jbhBl_ZNPOE6yQKBFC9gLKa6Ev2y5Ib83fo24QJmaJ9O9-Bnd08/p.jpeg" alt="" style="margin-left: 140px;width: 300px;">
+    <div class="banner-content">
+        <hr style="width:30px;margin: 0px 5px 20px;">
+        <h4>Consulta de manera libre</h4>
+        <h2>Gracias por estar interesado en que te ayudemos</h2>        
+    <form>
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombres y Apellidos" style="margin-top: 30px;">
+        <input type="email" id="email" name="email" required placeholder="Correo Electrónico">
+        
+        <textarea id="mensaje" name="mensaje" rows="8" required placeholder="Mensaje"></textarea>
+        
+        <button type="submit" style="background-color: #db4949 !important; color: white !important;">Consulta Libre</button>
+    </form> 
+    </div>
+</section>
+
+<section id="footer" class="content-footer">
+    <h4>Derechos Reservados by Gino Yangali Iparraguirre 2024</h4>
+   
+</section>
